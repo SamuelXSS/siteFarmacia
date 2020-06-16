@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentelella Alela! | </title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/logo.css">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <style type="text/css">
+      .login_content{
+        background-color: #3b576ddb;
+        border-radius: 5px;
+      }
+      .login_content form input[type="text"]{
+        border: 0.3px solid black;
+      }
+      .login_content form input[type="text"]:focus{
+        border-color: black;
+      }
+      .login_content {
+          padding: 10px;
+      }
+
+    </style>
+  </head>
+
+  <body class="login">
+    <div class="bloco">
+      <div class="login_wrapper" style="margin-top: 0;">
+        <div class="row" style="position: relative; left: 30%">
+            <h1 class="tracking-in">R </h1>
+            <div class="hr"></div>
+            <h1 class="tracking-in-expand" style="color: gray;"> RECEITA<br class="br">DIGITAL</h1>
+          </div>
+          <section class="login_content">
+                <form class="form-horizontal form-label-left">
+                  <span class="section" style="color: white;padding-top: 5px;">Informações farmácia</span>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <label class="col-form-label" for="cnpj">CNPJ <span class="required">*</span>
+                          <input type="text" id="cnpj" name="cnpj" required="required" class="form-control">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="col-form-label" for="razao">Razão Social<span class="required">*</span>
+                        <input type="text" id="razao" required="required" class="form-control">
+                      </label>
+                  </div>
+                  <div class="col-md-6">
+                      <label class="col-form-label">Situação <span class="required">*</span>
+                        <input id="inscricao" class="date-picker form-control" required="required" type="text">
+                      </label>
+                  </div>
+                    <div class="col-md-6">
+                        <label class="col-form-label" for="last-name">Email <span class="required">*</span>
+                          <input type="text" id="email" name="last-name" required="required" class="form-control">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-form-label" for="last-name">CEP <span class="required">*</span>
+                          <input type="text" name="cep" id="cep" maxlength="9" onblur="pesquisacep(this.value);" required="required" class="form-control">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-form-label" for="last-name">Rua <span class="required">*</span>
+                          <input type="text" id="rua" name="rua" required="required" class="form-control">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="col-form-label" for="last-name">Bairro <span class="required">*</span>
+                        <input type="text" id="bairro" name="bairro" required="required" class="form-control">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="col-form-label" for="last-name">Número <span class="required">*</span>
+                        <input type="text" id="numero" name="numero" required="required" class="form-control">
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-form-label" for="last-name">Cidade <span class="required">*</span>
+                          <input type="text" id="cidade" name="cidade" required="required" class="form-control">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="col-form-label" for="last-name">Estado <span class="required">*</span>
+                          <input type="text" id="uf" name="uf" required="required" class="form-control">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                      <a href="./login.html">Voltar</a>
+                    </div>
+                    <div class="col-md-6">
+                      <button class="btn btn-confirmar form-control">Confirmar</button>
+                     </div>
+                  </div>
+                </form>  
+          </section>
+      </div>
+    </div>
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+ <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- bootstrap-daterangepicker -->
+  <script src="../vendors/moment/min/moment.min.js"></script>
+  <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <!-- bootstrap-wysiwyg -->
+  <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+  <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+  <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+  <!-- jQuery Tags Input -->
+  <script src="../vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+  <!-- Switchery -->
+  <script src="../vendors/switchery/dist/switchery.min.js"></script>
+  <!-- Select2 -->
+  <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+  <!-- Parsley -->
+  <script src="../vendors/parsleyjs/dist/parsley.min.js"></script>
+  <!-- Autosize -->
+  <script src="../vendors/autosize/dist/autosize.min.js"></script>
+  <!-- jQuery autocomplete -->
+  <script src="../vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+  <!-- starrr -->
+  <script src="../vendors/starrr/dist/starrr.js"></script>
+  <!-- jQuery Smart Wizard -->
+  <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+  <script src="./js/receita/cepcnpj.js"></script>
+  <script type="text/javascript">
+    $(document).ready(()=>{
+        setTimeout(()=>{
+        $('.tracking-in-expand').open;
+      }, 2000)
+    })
+    
+  </script>
+  </body>
+</html>
